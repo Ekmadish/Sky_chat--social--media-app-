@@ -1,5 +1,5 @@
-import 'package:Twitter_Clone/signup.dart';
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/signup.dart';
+import 'package:Blog_App/utils/variables.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -28,14 +28,14 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Colors.green,
       body: Container(
         alignment: Alignment.center,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Welcome to flutter clone",
+              "Welcome",
               style: mystyle(30, Colors.white, FontWeight.w600),
             ),
             SizedBox(

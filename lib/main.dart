@@ -1,4 +1,4 @@
-import 'package:Twitter_Clone/navigation.dart';
+import 'package:Blog_App/navigation.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 

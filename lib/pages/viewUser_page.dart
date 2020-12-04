@@ -1,5 +1,5 @@
-import 'package:Twitter_Clone/comments.dart';
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/comments.dart';
+import 'package:Blog_App/utils/variables.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +96,7 @@ class _ViewUserState extends State<ViewUser> {
           .collection('following')
           .doc(widget.uid)
           .set({});
-      setState(() { 
+      setState(() {
         followers++;
         isfollowing = true;
       });

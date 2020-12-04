@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/utils/variables.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -143,7 +143,7 @@ class _AddTweetState extends State<AddTweet> {
           ),
           centerTitle: true,
           title: Text(
-            "Add Tweet",
+            "Add Post",
             style: mystyle(20),
           ),
           actions: [

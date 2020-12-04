@@ -1,5 +1,5 @@
-import 'package:Twitter_Clone/home_Page.dart';
-import 'package:Twitter_Clone/login_page.dart';
+import 'package:Blog_App/home_Page.dart';
+import 'package:Blog_App/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';

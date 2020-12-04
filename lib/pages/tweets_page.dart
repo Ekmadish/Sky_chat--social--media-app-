@@ -1,6 +1,7 @@
-import 'package:Twitter_Clone/addtweet.dart';
-import 'package:Twitter_Clone/comments.dart';
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/addtweet.dart';
+import 'package:Blog_App/comments.dart';
+import 'package:Blog_App/utils/variables.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -66,23 +67,29 @@ class _TweetsState extends State<Tweets> with AutomaticKeepAliveClientMixin {
         ),
       ),
       appBar: AppBar(
-        actions: [Icon(Icons.star)],
+        actions: [
+          Icon(
+            Icons.star,
+            size: 28,
+            color: Colors.black,
+          )
+        ],
         centerTitle: true,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Flutwitter",
+              "Blog",
               style: mystyle(20, Colors.white, FontWeight.w700),
             ),
             SizedBox(
               width: 5.0,
             ),
-            Image(
-              width: 45,
-              height: 45,
-              image: AssetImage('images/logo.png'),
-            ),
+            // Image(
+            //   width: 45,
+            //   height: 45,
+            //   image: AssetImage('images/logo.png'),
+            // ),
           ],
         ),
       ),
@@ -101,8 +108,8 @@ class _TweetsState extends State<Tweets> with AutomaticKeepAliveClientMixin {
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.white,
-                      backgroundImage:
-                          NetworkImage(tweetDoc.data()['profilepic']),
+                      backgroundImage: CachedNetworkImageProvider(
+                          tweetDoc.data()['profilepic']),
                     ),
                     title: Text(
                       tweetDoc.data()['username'],
@@ -124,7 +131,8 @@ class _TweetsState extends State<Tweets> with AutomaticKeepAliveClientMixin {
                             ),
                           if (tweetDoc.data()['type'] == 2)
                             Image(
-                                image: NetworkImage(tweetDoc.data()['image'])),
+                                image: CachedNetworkImageProvider(
+                                    tweetDoc.data()['image'])),
                           if (tweetDoc.data()['type'] == 3)
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -138,8 +146,8 @@ class _TweetsState extends State<Tweets> with AutomaticKeepAliveClientMixin {
                                   height: 10,
                                 ),
                                 Image(
-                                    image:
-                                        NetworkImage(tweetDoc.data()['image'])),
+                                    image: CachedNetworkImageProvider(
+                                        tweetDoc.data()['image'])),
                               ],
                             ),
                           SizedBox(

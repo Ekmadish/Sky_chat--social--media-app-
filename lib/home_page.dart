@@ -1,9 +1,9 @@
-import 'package:Twitter_Clone/pages/search_page.dart';
-import 'package:Twitter_Clone/pages/tweets_page.dart';
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/pages/search_page.dart';
+import 'package:Blog_App/pages/tweets_page.dart';
+import 'package:Blog_App/utils/variables.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:Twitter_Clone/pages/profile_page.dart';
+import 'package:Blog_App/pages/profile_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                 size: 32,
               ),
               title: Text(
-                "Tweets",
+                "Home",
                 style: mystyle(20),
               ),
             ),

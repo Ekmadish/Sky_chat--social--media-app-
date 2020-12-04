@@ -1,4 +1,4 @@
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/utils/variables.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -42,7 +42,7 @@ class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Colors.green,
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.only(top: 150),
@@ -50,10 +50,7 @@ class _SignupState extends State<Signup> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                "Get Started fluttertwit",
-                style: mystyle(30, Colors.white, FontWeight.w600),
-              ),
+              
               SizedBox(
                 height: 15,
               ),

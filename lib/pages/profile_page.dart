@@ -1,5 +1,6 @@
-import 'package:Twitter_Clone/comments.dart';
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/comments.dart';
+import 'package:Blog_App/utils/variables.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -126,7 +127,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       child: CircleAvatar(
                         radius: 64,
                         backgroundColor: Colors.white,
-                        backgroundImage: NetworkImage(profilepic),
+                        backgroundImage: CachedNetworkImageProvider(profilepic),
                       ),
                     ),
                     Container(
@@ -221,8 +222,10 @@ class _ProfilePageState extends State<ProfilePage> {
                                         child: ListTile(
                                           leading: CircleAvatar(
                                             backgroundColor: Colors.white,
-                                            backgroundImage: NetworkImage(
-                                                tweetdoc.data()['profilepic']),
+                                            backgroundImage:
+                                                CachedNetworkImageProvider(
+                                                    tweetdoc
+                                                        .data()['profilepic']),
                                           ),
                                           title: Text(
                                             tweetdoc.data()['username'],
@@ -247,8 +250,10 @@ class _ProfilePageState extends State<ProfilePage> {
                                                 ),
                                               if (tweetdoc.data()['type'] == 2)
                                                 Image(
-                                                    image: NetworkImage(tweetdoc
-                                                        .data()['image'])),
+                                                    image:
+                                                        CachedNetworkImageProvider(
+                                                            tweetdoc.data()[
+                                                                'image'])),
                                               if (tweetdoc.data()['type'] == 3)
                                                 Column(
                                                   children: [
@@ -263,9 +268,10 @@ class _ProfilePageState extends State<ProfilePage> {
                                                       height: 10,
                                                     ),
                                                     Image(
-                                                        image: NetworkImage(
-                                                            tweetdoc.data()[
-                                                                'image'])),
+                                                        image:
+                                                            CachedNetworkImageProvider(
+                                                                tweetdoc.data()[
+                                                                    'image'])),
                                                   ],
                                                 ),
                                               SizedBox(height: 10),

@@ -1,5 +1,5 @@
-import 'package:Twitter_Clone/pages/viewUser_page.dart';
-import 'package:Twitter_Clone/utils/variables.dart';
+import 'package:Blog_App/pages/viewUser_page.dart';
+import 'package:Blog_App/utils/variables.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
