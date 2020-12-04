@@ -1,16 +1,20 @@
 # BlogApp
 
-A new Flutter project.
 
-## Getting Started
+### Function:
+## Upload post with Image OR Text
+## Comment
+## Llike
+## Share
+## Search User =>View Users profile and Post
+![PSX_20201204_225450](https://user-images.githubusercontent.com/44582949/101191702-381deb80-3684-11eb-9f19-9cb1278f6581.jpg)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+![1](https://user-images.githubusercontent.com/44582949/101192531-64863780-3685-11eb-9af8-81b5e50ffa1b.gif)
 
-This project is a starting point for a Flutter application.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+![2](https://user-images.githubusercontent.com/44582949/101192538-65b76480-3685-11eb-92e3-39afdb293743.gif)
 
-A few resources to get you started if this is your first Flutter project:
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+![3](https://user-images.githubusercontent.com/44582949/101192550-6c45dc00-3685-11eb-9f80-2ccf08c66c64.gif)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
